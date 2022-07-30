@@ -68,6 +68,32 @@ header .container {
   padding-left: 15px;
   padding-right: 15px;
 }
+.hero-img {
+  /* max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+
+  /* display: flex;
+  align-items: center;
+  background-image: linear-gradient (to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+}
+
+.section.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: var(--first-bcg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0;
+}
 
 .list {
   list-style: none; /*забирає крапку перед списком*/
@@ -163,12 +189,7 @@ header .container {
 div {
   display: block;
 }
-.section.hero {
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-  background-color: var(--first-bcg-color);
-  padding: 200px 0;
-}
+
 /* .hero {
   background-color: var(--first-bcg-color);
   padding: 200px 0;
@@ -304,7 +325,8 @@ div {
 
 /* ---------- ФУТЕР ---------- */
 .footer {
-  padding: 60px;
+  padding: 60px 0;
+  background-color: var(--first-bcg-color);
 }
 
 .footer-logo {
@@ -316,9 +338,6 @@ div {
   color: var(--hover-text-color);
 }
 
-.footer {
-  background-color: var(--first-bcg-color);
-}
 .footer-logo-studio {
   color: #ffffff;
 }
