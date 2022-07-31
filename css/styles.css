@@ -386,47 +386,48 @@ div {
   gap: 10px;
 }
 /* ---------- Постійні клієнти ---------- */
-
-.clients-link {
+/* .icon-client-link {
+  display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4%;
-  background-color: #fff;
-  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  color: var(--icon-color);
-  transition: color 500ms, background-color 500ms;
-  /* transition - плавная смена цвета при ховере */
+} */
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  align-items: center;
+  justify-content: center;
 }
-.clients-list-item {
-  fill: currentColor;
-}
+
 .team-soc-link:hover {
   background-color: var(--hover-text-color);
   color: #fff;
 }
 .clients-list {
   display: flex;
-  justify-content: center;
+  margin-top: 50px;
   gap: 30px;
 }
+
 .clients-icon {
-  fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--hover-text-color);
+  border: 1px solid var(--hover-text-color);
 }
-.icon-logologo {
-  width: 1.7666015625em;
-}
+
 /* ---------- ФУТЕР ---------- */
 .footer {
   padding: 60px 0;
@@ -475,7 +476,16 @@ div {
 .footer-list-emph:focus {
   color: var(--hover-text-color);
 }
-
+.add-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /* ---------- PORTFOLIO ---------- */
 /* ---------- PORTFOLIO ---------- */
 
