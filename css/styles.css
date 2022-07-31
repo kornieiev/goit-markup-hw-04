@@ -62,6 +62,20 @@ header .container {
 .header-logo {
   margin-right: 93px;
 }
+.header-contact-link {
+  display: flex;
+  align-items: baseline;
+}
+.header-contact-icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 12px;
+  align-items: center;
+}
+.contact-mail:hover .header-contact-icon {
+  fill: var(--hover-text-color);
+}
+
 .container {
   /* width: 100%; прибираємо*/
   width: 1200px;
@@ -86,7 +100,7 @@ header .container {
 
 .section.hero {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin: 0 auto;
   background-color: var(--first-bcg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -161,6 +175,7 @@ header .container {
   padding-bottom: 32px;
   display: block;
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--hover-text-color);
@@ -230,7 +245,15 @@ div {
 .section {
   padding: 94px 0;
 }
-
+.features-icon-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-bcg-color);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .section.features {
   padding-bottom: 94px;
 }
@@ -268,6 +291,7 @@ div {
   background-color: var(--third-bcg-color);
   text-align: center;
 }
+.clients-title,
 .portfolio-title,
 .team-title {
   font-weight: 700;
@@ -361,7 +385,48 @@ div {
   justify-content: center;
   gap: 10px;
 }
+/* ---------- Постійні клієнти ---------- */
 
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--icon-color);
+  transition: color 500ms, background-color 500ms;
+  /* transition - плавная смена цвета при ховере */
+}
+.clients-list-item {
+  fill: currentColor;
+}
+.team-soc-link:hover {
+  background-color: var(--hover-text-color);
+  color: #fff;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-icon {
+  fill: currentColor;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-logologo {
+  width: 1.7666015625em;
+}
 /* ---------- ФУТЕР ---------- */
 .footer {
   padding: 60px 0;
