@@ -71,6 +71,7 @@ header .container {
   margin-right: 10px;
   padding-top: 0;
   padding-bottom: 0;
+  fill: currentColor;
   /* width: 24px;
   height: 12px; */
   align-items: center;
@@ -372,6 +373,7 @@ div {
 .team-soc-icon {
   fill: currentColor;
 }
+.team-soc-link:focus,
 .team-soc-link:hover {
   background-color: var(--hover-text-color);
   color: #fff;
@@ -414,8 +416,10 @@ div {
   fill: var(--icon-color);
   align-items: center;
   justify-content: center;
+  outline: transparent;
 }
 
+.team-soc-link:focus,
 .team-soc-link:hover {
   background-color: var(--hover-text-color);
   color: #fff;
@@ -585,7 +589,6 @@ div {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 12px;
 }
 
 .footer-network {
@@ -613,4 +616,5 @@ div {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
