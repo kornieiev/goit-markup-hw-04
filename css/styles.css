@@ -33,6 +33,7 @@ address {
 }
 button {
   cursor: pointer;
+  outline: transparent;
 }
 
 body {
@@ -333,6 +334,7 @@ div {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 .team-list {
   display: flex;
@@ -345,6 +347,7 @@ div {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 16px;
 }
 .team-combine {
   padding-top: 30px;
@@ -365,7 +368,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
   color: var(--icon-color);
   transition: color 500ms, background-color 500ms;
   /* transition - плавная смена цвета при ховере */
@@ -535,6 +537,9 @@ div {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+.example-card {
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 .example-card:hover,
 .example-card:focus {
