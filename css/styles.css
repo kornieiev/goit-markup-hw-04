@@ -27,6 +27,7 @@ ol {
 }
 a {
   color: currentColor;
+  text-decoration: none;
 }
 address {
   font-style: normal;
@@ -47,10 +48,6 @@ body {
 img {
   display: block;
 }
-
-/* * {
-   outline: 2px solid tomato;
-} */
 
 .header {
   background-color: var(--);
@@ -274,10 +271,10 @@ div {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   max-width: 270px;
+  margin-bottom: 10px;
 }
 .features-text {
   min-width: 270px;
-  margin-top: 10px;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -341,7 +338,6 @@ div {
   gap: 30px;
 }
 .team-name-job {
-  margin-top: 10px;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -538,18 +534,27 @@ div {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+.example-link,
 .example-card {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
-.example-card:hover,
-.example-card:focus {
+
+.example-link,
+.example-link {
   cursor: pointer;
-  /* color: var(--third-text-color);
-  background-color: var(--hover-text-color); */
+  border-radius: 4px;
+  display: block;
+}
+
+.example-link:focus,
+.example-link:hover {
+  cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  outline: transparent;
 }
+
 .examples {
   display: flex;
   gap: 30px;
